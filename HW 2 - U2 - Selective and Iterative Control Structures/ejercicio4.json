@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-07-18T03:03:28.384Z",
+  "theme": "upy",
+  "reportData": [
+    {
+      "id": 1784342213633,
+      "type": "header",
+      "content": "",
+      "hData": {
+        "name": "Sabrina Sheccid Pool Canul ",
+        "group": "A",
+        "subject": "Programmming",
+        "prof": "Jorge Alejandro Pavia",
+        "inst": "Universidad Politecnica de Yucatán ",
+        "term": "Segundo",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": 1784343765884,
+      "type": "subtitle",
+      "content": "Problem 4 — Season Classifier"
+    },
+    {
+      "id": 1784343791600,
+      "type": "code",
+      "content": "while True:\n    # INPUT\n    mmin = input(\"Month number = \").strip().lower()\n    if mmin == 'exit':\n        break    \n    # PROCESS\n    try:\n        month = int(mmin)\n    except ValueError:\n        print(\"Enter a number or 'exit'.\")\n        continue   \n    if month < 1 or month > 12:\n        s = \"Invalid\"\n    elif month in (12, 1, 2):\n        s = \"Winter\"\n    elif month in (3, 4, 5):\n        s = \"Spring\"\n    elif month in (6, 7, 8):\n        s = \"Summer\"\n    elif month in (9, 10, 11):\n        s = \"Fall\"     \n    # OUTPUT\n    if s == \"Invalid\":\n        print(\"Please enter a number between 1 and 12.\")\n    else:\n        print(s)"
+    }
+  ]
+}

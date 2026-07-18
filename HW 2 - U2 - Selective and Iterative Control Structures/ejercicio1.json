@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-07-18T02:54:45.679Z",
+  "theme": "upy",
+  "reportData": [
+    {
+      "id": 1784342213633,
+      "type": "header",
+      "content": "",
+      "hData": {
+        "name": "Sabrina Sheccid Pool Canul ",
+        "group": "A",
+        "subject": "Programmming",
+        "prof": "Jorge Alejandro Pavia",
+        "inst": "Universidad Politecnica de Yucatán ",
+        "term": "Segundo",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": 1784343194610,
+      "type": "title",
+      "content": "HW 2 - U2 - Selective and Iterative Control Structures"
+    },
+    {
+      "id": 1784343211211,
+      "type": "subtitle",
+      "content": "Problem 1 — Grade Averaging System"
+    },
+    {
+      "id": 1784343250844,
+      "type": "code",
+      "content": "#Grade_Averaging_System\ndef grade_averaging_system():\n    grades = []\n    #INPUT\n    print(\"Enter your grades, when you finish enter 'done':\")\n    #PROCESS\n    while True:\n        gradein = input(\"- \").strip().lower() \n        if gradein == 'done':\n            break\n        try:\n            grade = float(gradein)\n            grades.append(grade)\n        except ValueError:\n            print(\"Enter a valid number or 'done'.\") \n    if len(grades) == 0:\n        print(\"Enter at least one grade.\")\n    else:\n        total = sum(grades) / len(grades)\n        #OUTPUT\n        pf = \"Passed\" if total >= 7.0 else \"Failed\"\n        print(f\"Average: {total:.2f} — {pf}\")\nif __name__ == \"__main__\":\n    grade_averaging_system()"
+    }
+  ]
+}

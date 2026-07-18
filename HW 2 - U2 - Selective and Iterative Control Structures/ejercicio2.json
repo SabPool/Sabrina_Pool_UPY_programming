@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-07-18T02:57:11.113Z",
+  "theme": "upy",
+  "reportData": [
+    {
+      "id": 1784342213633,
+      "type": "header",
+      "content": "",
+      "hData": {
+        "name": "Sabrina Sheccid Pool Canul ",
+        "group": "A",
+        "subject": "Programmming",
+        "prof": "Jorge Alejandro Pavia",
+        "inst": "Universidad Politecnica de Yucatán ",
+        "term": "Segundo",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": 1784343194610,
+      "type": "title",
+      "content": "HW 2 - U2 - Selective and Iterative Control Structures"
+    },
+    {
+      "id": 1784343392512,
+      "type": "subtitle",
+      "content": "Problem 2 — BMI Calculator"
+    },
+    {
+      "id": 1784343395996,
+      "type": "code",
+      "content": "while True:\n    # INPUT\n    win = input(\"weight = \").strip().lower()\n    if win == 'exit':\n        break  \n    hin = input(\"height = \") \n    # PROCESS\n    w = float(win)\n    h = float(hin) \n    bmi = w / (h ** 2)\n    if bmi < 18.5:\n        tb = \"Underweight\"\n    elif bmi <= 24.9:\n        tb = \"Normal\"\n    elif bmi <= 29.9:\n        tb = \"Overweight\"\n    else:\n        tb = \"Obese\"   \n    # OUTPUT\n    print(f\"BMI: {bmi:.2f} — {tb}\")"
+    }
+  ]
+}

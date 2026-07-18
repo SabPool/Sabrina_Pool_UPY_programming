@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-07-18T03:05:09.853Z",
+  "theme": "upy",
+  "reportData": [
+    {
+      "id": 1784342213633,
+      "type": "header",
+      "content": "",
+      "hData": {
+        "name": "Sabrina Sheccid Pool Canul ",
+        "group": "A",
+        "subject": "Programmming",
+        "prof": "Jorge Alejandro Pavia",
+        "inst": "Universidad Politecnica de Yucatán ",
+        "term": "Segundo",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": 1784343869636,
+      "type": "subtitle",
+      "content": "Problem 5 — Shipping Cost Calculator"
+    },
+    {
+      "id": 1784343896768,
+      "type": "code",
+      "content": "total = 0.0\n\nwhile True:\n    # INPUT\n    win = input(\"weight (lbs) = \").strip().lower()\n    if win == 'exit':\n        break\n    din = input(\"distance (miles) = \")\n    # PROCESS\n    try:\n        w = float(win)\n        d = float(din)\n    except ValueError:\n        print(\"Enter a decimal\")\n        continue  \n    if w < 0 or d < 0:\n        print(\"Enter a non negative decimal\")\n        continue    \n    if d <= 100:\n        if w <= 5:\n            cost = 50.00\n        else:\n            cost = 80.00\n    else:\n        if w <= 5:\n            cost = 120.00\n        else:\n            cost = 200.00\n            \n    total += cost\n    # OUTPUT\n    print(f\"Shipping cost: ${cost:.2f} MXN\")\nprint(f\"Total: ${total:.2f} MXN\")"
+    }
+  ]
+}

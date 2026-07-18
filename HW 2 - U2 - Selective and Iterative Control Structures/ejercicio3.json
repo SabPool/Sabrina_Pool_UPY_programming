@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "timestamp": "2026-07-18T03:01:45.117Z",
+  "theme": "upy",
+  "reportData": [
+    {
+      "id": 1784342213633,
+      "type": "header",
+      "content": "",
+      "hData": {
+        "name": "Sabrina Sheccid Pool Canul ",
+        "group": "A",
+        "subject": "Programmming",
+        "prof": "Jorge Alejandro Pavia",
+        "inst": "Universidad Politecnica de Yucatán ",
+        "term": "Segundo",
+        "date": "2026-07-11"
+      }
+    },
+    {
+      "id": 1784343692734,
+      "type": "subtitle",
+      "content": "Problem 3 — Water Bill Calculator"
+    },
+    {
+      "id": 1784343696250,
+      "type": "code",
+      "content": "total = 0.0\nwhile True:\n    # INPUT\n    dato = input(\"m³ consumed = \").strip().lower() \n    if dato == 'exit':\n        break    \n    # PROCESS\n    m3 = float(dato)\n    if m3 < 0:\n        print(\"Must be a non negative decimal.\")\n        continue    \n    if m3 <= 10:\n        t = 8.00\n    elif m3 <= 20:\n        t = 12.00\n    else:\n        t = 18.00  \n    month = m3 * t\n    total += month\n    # OUTPUT\n    print(f\"Month charge: ${month:.2f} MXN\")\nprint(f\"Total: ${total:.2f} MXN\")"
+    }
+  ]
+}
