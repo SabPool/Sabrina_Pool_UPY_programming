@@ -1,2 +1,7 @@
 # Reporte
-semana de la ingenieria UPY
+Semana de la ingenieria UPY
+Instrucciones:
+ - Nombre del evento
+ - Tipo de actividad
+ - Una breve descripción
+ - Evidencia fotografica  
