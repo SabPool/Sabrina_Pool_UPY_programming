@@ -1,1 +1,0 @@
-# Portafolio de ejercicio
